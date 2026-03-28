@@ -1,0 +1,30 @@
+# Render.com Configuration for Kenostod Website
+services:
+  - type: web
+    name: kenostod-website
+    runtime: static
+    buildCommand: echo "Static site - no build needed"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /
+        destination: /index.html
+      - type: rewrite
+        source: /utl-protocol
+        destination: /utl-dashboard.html
+      - type: rewrite
+        source: /kutl-card
+        destination: /utl-dashboard.html
+      - type: rewrite
+        source: /founder
+        destination: /founder-backoffice.html
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
