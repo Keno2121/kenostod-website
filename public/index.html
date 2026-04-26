@@ -9,7 +9,14 @@
     <title>Kenostod Blockchain Academy - A Shield Against Poverty</title>
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="apple-touch-icon" href="logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260421b">
+    <style>
+        @media (max-width: 900px) {
+            .nav-menu { display: none !important; }
+            .language-switcher { display: none !important; }
+            .mobile-menu-btn { display: flex !important; align-items: center; justify-content: center; flex-shrink: 0; margin-left: auto; }
+        }
+    </style>
 </head>
 <body>
     <!-- Professional Navigation -->
@@ -31,7 +38,7 @@
                 <a href="/security.html" class="nav-link" style="background: linear-gradient(135deg, #10b981 0%, #0f766e 100%); color: white; padding: 8px 16px; border-radius: 20px; font-weight: 700; border: 1px solid rgba(16,185,129,0.4);">🔍 Security</a>
                 <a href="/utl-dashboard.html" class="nav-link" style="background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%); color: white; padding: 8px 16px; border-radius: 20px; font-weight: 700; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 0 12px rgba(139,92,246,0.4);" title="Universal Transaction Layer — A Kenostod Innovation">UTL Protocol</a>
                 <a href="/farm.html" class="nav-link" style="background: linear-gradient(135deg, #f5c842 0%, #c9a227 100%); color: #000; padding: 8px 16px; border-radius: 20px; font-weight: 700;">🌾 Farm</a>
-                <a href="/resilience-economy.html" class="nav-link" style="background: linear-gradient(135deg, #0a2a10 0%, #1b8a3e 100%); color: #ffd700; padding: 8px 16px; border-radius: 20px; font-weight: 700; border: 1px solid rgba(255,215,0,0.4);">🌐 Resilient Finance</a>
+                <a href="/sovereign-economy.html" class="nav-link" style="background: linear-gradient(135deg, #1a1000 0%, #3d2800 100%); color: #ffd700; padding: 8px 16px; border-radius: 20px; font-weight: 700; border: 1px solid rgba(255,215,0,0.5); box-shadow: 0 0 12px rgba(255,215,0,0.15);">👑 Sovereign Economy</a>
                 <a href="/tokenomics.html" class="nav-link" style="background: linear-gradient(135deg, #1a0a3e 0%, #4a1a8a 100%); color: #ffc107; padding: 8px 16px; border-radius: 20px; font-weight: 700; border: 1px solid rgba(255,193,7,0.4);">📊 Tokenomics</a>
                 <div class="language-switcher">
                     <button class="lang-btn" onclick="toggleLanguageDropdown()">
@@ -81,6 +88,9 @@
         <a href="/for-organizations.html" class="nav-link" onclick="toggleMobileMenu()" style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); color: white; padding: 12px 20px; border-radius: 8px; font-weight: 700; margin: 5px 0;">🏢 For Organizations</a>
         <a href="/arbitrage.html" class="nav-link" onclick="toggleMobileMenu()" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 12px 20px; border-radius: 8px; font-weight: 700; margin: 5px 0;">⚡ Arbitrage Revolution</a>
         <a href="/fal-pools.html" class="nav-link" onclick="toggleMobileMenu()" style="background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); color: white; padding: 12px 20px; border-radius: 8px; font-weight: 700; margin: 5px 0;">🏊 FAL Pools</a>
+        <a href="/liquidity.html" class="nav-link" onclick="toggleMobileMenu()" style="background: linear-gradient(135deg, #1e3a5f 0%, #1e4080 100%); color: #60a5fa; padding: 12px 20px; border-radius: 8px; font-weight: 700; margin: 5px 0; border: 1px solid rgba(96,165,250,0.4); text-align: center;">💧 KENO Liquidity Manager</a>
+        <a href="/live-arb-bot.html" class="nav-link" onclick="toggleMobileMenu()" style="background: linear-gradient(135deg, #10b981 0%, #0f4c35 100%); color: white; padding: 12px 20px; border-radius: 8px; font-weight: 700; margin: 5px 0; border: 1px solid rgba(16,185,129,0.5); box-shadow: 0 0 12px rgba(16,185,129,0.3); text-align: center;">🤖 Live Arb Bot — On-Chain Trading</a>
+        <a href="/real-fal.html" class="nav-link" onclick="toggleMobileMenu()" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #10b981; padding: 12px 20px; border-radius: 8px; font-weight: 700; margin: 5px 0; border: 2px solid #10b981; box-shadow: 0 0 16px rgba(16,185,129,0.4); text-align: center;">⚡ Real FAL — Flash Arb On-Chain</a>
         <a href="/terms-of-service.html" class="nav-link" onclick="toggleMobileMenu()" data-i18n="nav.terms">Terms of Service</a>
         <a href="/wealth-builder.html" class="nav-link" onclick="toggleMobileMenu()" data-i18n="nav.wealth">💰 Wealth Builder</a>
         <a href="/graduate-club.html" class="nav-link" onclick="toggleMobileMenu()" data-i18n="nav.graduates">🎓 Graduate Club</a>
@@ -217,7 +227,8 @@
             </p>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="/arbitrage-landing.html" style="background: white; color: #059669; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2em; box-shadow: 0 5px 20px rgba(0,0,0,0.3); transition: transform 0.3s ease; display: inline-block;">📚 Learn More</a>
-                <a href="/arbitrage.html" style="background: transparent; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2em; border: 3px solid white; transition: all 0.3s ease; display: inline-block;">🎯 Start Trading</a>
+                <a href="/arbitrage.html" style="background: transparent; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2em; border: 3px solid white; transition: all 0.3s ease; display: inline-block;">🎯 FAL Simulator</a>
+                <a href="/live-arb-bot.html" style="background: #0f172a; color: #10b981; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2em; border: 3px solid #10b981; box-shadow: 0 0 20px rgba(16,185,129,0.4); display: inline-block;">🤖 Live Arb Bot</a>
             </div>
             <div style="margin-top: 30px; display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; font-size: 1.1em;">
                 <div><strong>✓</strong> Borrow up to 10,000 KENO instantly</div>
@@ -2198,7 +2209,13 @@
                 });
 
                 clearTimeout(timeoutId);
-                const data = await response.json();
+                const rawText = await response.text();
+                let data = {};
+                try {
+                    data = rawText ? JSON.parse(rawText) : {};
+                } catch (e) {
+                    throw new Error('Server returned an invalid response. Please try again in a moment.');
+                }
 
                 if (!response.ok) {
                     throw new Error(data.error || 'Failed to create checkout session');
@@ -2803,9 +2820,67 @@
     <!-- Crypto Ticker (Bottom) -->
     <div class="crypto-ticker crypto-ticker-bottom">
         <div class="ticker-content" id="tickerContent">
-            <span class="ticker-item" data-i18n="ticker.loading">Loading crypto activity...</span>
+            <span class="ticker-item">Loading prices...</span>
         </div>
     </div>
+
+    <script>
+    (function initTicker() {
+      const COINS = [
+        { id: 'bitcoin',      sym: 'BTC' },
+        { id: 'ethereum',     sym: 'ETH' },
+        { id: 'binancecoin',  sym: 'BNB' },
+        { id: 'usd-coin',     sym: 'USDC' },
+        { id: 'matic-network',sym: 'MATIC' },
+      ];
+
+      function fmtPrice(p) {
+        if (p >= 1000) return '$' + p.toLocaleString('en-US', { maximumFractionDigits: 0 });
+        if (p >= 1)    return '$' + p.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        return '$' + p.toFixed(4);
+      }
+
+      function fmtChg(c) {
+        const sign = c >= 0 ? '▲' : '▼';
+        const color = c >= 0 ? '#22c55e' : '#ef4444';
+        return `<span style="color:${color}">${sign} ${Math.abs(c).toFixed(2)}%</span>`;
+      }
+
+      async function fetchAndRender() {
+        const ticker = document.getElementById('tickerContent');
+        if (!ticker) return;
+        try {
+          const ids = COINS.map(c => c.id).join(',');
+          const resp = await fetch(
+            `https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd&include_24hr_change=true`,
+            { cache: 'no-store' }
+          );
+          if (!resp.ok) throw new Error('API error');
+          const data = await resp.json();
+
+          const items = COINS.map(coin => {
+            const d = data[coin.id];
+            if (!d) return '';
+            const price = fmtPrice(d.usd);
+            const chg = fmtChg(d.usd_24h_change || 0);
+            return `<span class="ticker-item">${coin.sym} &nbsp;${price}&nbsp; ${chg}</span>`;
+          }).filter(Boolean);
+
+          // Add KENO placeholder (not on CoinGecko yet)
+          items.push(`<span class="ticker-item">KENO &nbsp;<span style="color:#d4af37">Pre-Market</span></span>`);
+
+          // Duplicate for seamless scroll loop
+          ticker.innerHTML = [...items, ...items].join('');
+
+        } catch (e) {
+          ticker.innerHTML = `<span class="ticker-item">BTC &nbsp; ETH &nbsp; BNB &nbsp; KENO — price feed loading</span>`;
+        }
+      }
+
+      fetchAndRender();
+      setInterval(fetchAndRender, 60000);
+    })();
+    </script>
 
     <script src="/ai-support-widget.js"></script>
 </body>
