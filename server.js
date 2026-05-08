@@ -349,6 +349,9 @@ app.use(express.static('public', {
     }
 }));
 
+// Clean URL routes for community sharing links
+app.get('/welcome', (req, res) => res.sendFile(__dirname + '/public/welcome.html'));
+app.get('/community', (req, res) => res.sendFile(__dirname + '/public/community.html'));
 
 app.use('/snap', express.static('utl/metamask-snap', {
     setHeaders: (res) => {
